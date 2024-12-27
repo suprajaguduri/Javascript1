@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecondLargestNumber</title>
+</head>
+<body>
+    <script>
+        const secondBiggestNumber = (data) => {
+            first = data[0];
+            second = data[0];
+            for (var i = 0; i < data.length; i++) {
+              if (first < data[i]){
+                second = first;
+                first = data[i];
+              }else if (second < data[i]){
+                second = data[i];
+              }
+            }
+            document.write("Second Biggest Number:",second);
+           }
+           
+           const arr = [62,33,12,90,10,28,24];
+           secondBiggestNumber(arr);  
+    </script>
+</body>
+</html>
+

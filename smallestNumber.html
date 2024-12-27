@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmallestNumber</title>
+</head>
+<body>
+    <script>
+        function findSmallestNumber(arr) {
+            if (arr.length === 0) {
+                document.write("Array is empty.");
+                return;
+            }
+        
+            let smallest = arr[0];
+        
+            for (let num of arr) {
+                if (num < smallest) {
+                    smallest = num;
+                }
+            }
+        
+            document.write("The smallest number is:", smallest);
+        }
+        const numbers = [10, 20, 5, 40, 30];
+        findSmallestNumber(numbers);
+    </script>
+</body>
+</html>
