@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class human{
+            display(){
+                document.write("Hello human")
+            }
+            greet(){
+                document.write("<br> Greetings for human")
+            }
+        }
+        class employee extends human{
+            greet(){
+                super.greet();
+                document.write("<br> Good Morning")
+            }
+        }
+        var e1 = new employee();
+        e1.display();
+        e1.greet();
+    </script>
+</body>
+</html>

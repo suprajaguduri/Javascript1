@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructorFunction</title>
+</head>
+<body>
+    <script>
+        function mobile(mobileName,mobileCompany,mobilePrice){
+            this.mobileName = mobileName;
+            this.mobileCompany = mobileCompany;
+            this.mobilePrice = mobilePrice;
+        }
+        let s1=new mobile("S23","SamSung",45000);
+        let s2=new mobile("9RT","Oneplus",42000);
+        document.write(s1.mobileCompany+" "+ s1.mobileName);
+        document.write('<br>');
+        document.write(s2.mobileCompany+" "+ s2.mobileName);
+    </script>
+</body>
+</html>

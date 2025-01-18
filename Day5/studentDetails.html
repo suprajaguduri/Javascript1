@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function student(studentName,studentClass,studentMarks)
+        {
+            this.studentName = studentName;
+            this.studentClass = studentClass;
+            this.studentMarks = studentMarks;
+        }
+        let s1 = new student("supraja","10th",95);
+        let s2 = new student("shirisha","10th",85);
+        let s3 = new student("saniya","10th",91);
+        let s4 = new student("sowmya","10th",75);
+        let s5 = new student("Akhila","10th",87);
+
+        let allStudents = [s1,s2,s3,s4,s5];
+        var updateStudentDetails = allmobiles.filter((ele)=>ele.studentMarks>75);
+        for(let u of updateStudentDetails){
+            for(let k in u){
+                document.write(k+ ":" +u[k]+ '<br>');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functionApply</title>
+</head>
+<body>
+    <script>
+        var mobile ={ 
+            mobileName : "9RT",
+            mobileCompany : "Oneplus",
+            processor : "SD 888",
+            storage : "128GB",
+            price : "40000",
+            fullName:function(camera,speaker)
+            {
+                return this.mobileCompany + this.mobileName + camera + " with " + speaker;
+            }
+        }
+        var m1={
+            mobileName : "S23 ultra",
+            mobileCompany : "SamSung",
+            processor : "SD 888"
+        }
+        document.write(mobile.fullName.apply(m1,[" Hassleblad","Sony speaker"]));
+    </script>
+</body>
+</html>

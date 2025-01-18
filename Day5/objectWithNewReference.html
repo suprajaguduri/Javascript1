@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mobile ={ 
+            mobileName : "9RT",
+            mobileCompany : "Oneplus",
+            processor : "SD 888",
+            storage : "128GB",
+            price : "40000"
+        }
+        var m1=new Object();
+        m1.mobileName="SamSung";
+        m1.price="40000"
+        for(let m in mobile)
+        for(let k in m1)
+        //document.write(k+ ' : ' +m1[k]+ '<br>');
+        document.write(k+ ' : ' +mobile[k]+ '<br>');
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructorFunction</title>
+</head>
+<body>
+    <script>
+        function mobile(mobileName,mobileCompany,mobilePrice){
+            this.mobileName = mobileName;
+            this.mobileCompany = mobileCompany;
+            this.mobilePrice = mobilePrice;
+        }
+        let s1=new mobile("S23","SamSung",45000);
+        let s2=new mobile("9RT","Oneplus",42000);
+        let s3=new mobile("pixel 8","Google",70000);
+        let allmobiles=[s1,s2,s3];
+        var updatemobile = allmobiles.filter((ele)=>ele.mobilePrice>50000);
+        for(let u of updatemobile){
+            for(let k in u){
+                document.write(k+ ":" +u[k]+ '<br>');
+            }
+        }
+    </script>
+</body>
+</html>

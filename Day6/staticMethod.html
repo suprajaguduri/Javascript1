@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class person{
+            constructor(firstName,age,address){
+                this.firstName=firstName;
+                this.age=age;
+                this.address=address;
+            }
+            displayDetails(){
+                document.write(`${this.firstName} welcome to DRF from ${this.address}`)
+            }
+            static.greet(){
+                document.write("Hello world<br>")
+            }
+        }
+        person.greet();
+        var p1 = new person("Bhaskaraa",27, "HYD")
+        p1.displayDetails();
+    </script>
+</body>
+</html>

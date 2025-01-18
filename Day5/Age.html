@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age</title>
+</head>
+<body>
+    <script>
+        let people=[
+        {
+            personName:"John",
+            age:25,
+            gender:"male"
+        },
+        {
+            personName:"Jane",
+            age:16,
+            gender:"female"
+        },
+        {
+            personName:"Jane",
+            age:16,
+            gender:"female"
+        } ]
+        people.forEach((p)=>p.isAdult=p.age>18)
+        var newpeople=people.map((p)=>{
+            return{
+                ...p,
+                isAdult:p.age>18
+            }
+        })
+        for(let p of people){
+            for(let k in p){
+                document.write(`${k}:${p[k]}<br>`);
+            }
+            document.write("<br><br>")
+        }
+    </script>
+</body>
+</html>

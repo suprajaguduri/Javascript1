@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class human{
+            constructor(firstName,age){
+                this.firstName=firstName;
+                this.age=age;
+            }
+            display(){
+                document.write("Hello " + this.firstName)
+            }
+            greet(){
+                document.write("<br>Greetings from human")
+            }
+        }
+        class employee extends human{
+            constructor(firstName,age,address){
+                super(firstName,age);
+                this.address=address;
+            }
+            greet(){
+                document.write("<br> Good Morning from " +this.address)
+            }
+        }
+        var e1 = new employee("Bhaskaraa", 27, "hyd")
+        e1.display();
+        e1.greet();
+    </script>
+</body>
+</html>
